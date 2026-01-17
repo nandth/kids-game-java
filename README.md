@@ -1,6 +1,6 @@
 # Mathematical Quiz Engine
 
-A Java application exploring fundamental Object-Oriented Programming concepts through an interactive mathematical quiz system with multiple game modes and multiplayer support.
+A Java application exploring fundamental Object-Oriented Programming concepts through an interactive mathematical quiz system with multiple game modes and turn based multiplayer support. Added a Minecraft theme for... flavour.
 
 ## Overview
 
