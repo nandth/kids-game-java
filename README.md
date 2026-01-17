@@ -1,53 +1,53 @@
 # Mathematical Quiz Engine
 
-An elegant demonstration of fundamental Object-Oriented Programming principles in Java, showcasing clean architecture, separation of concerns, and practical design patterns through an interactive mathematical quiz application.
+A Java application exploring fundamental Object-Oriented Programming concepts through an interactive mathematical quiz system with multiple game modes and multiplayer support.
 
 ## Overview
 
-This project exemplifies core OOP concepts through a well-structured application that separates business logic, data models, and presentation layers. The architecture demonstrates proper encapsulation, single responsibility principle, and thoughtful abstraction.
+The project demonstrates separation of concerns across business logic, data models, and presentation layers. The implementation focuses on practical application of OOP principles including encapsulation, modularity, and event-driven design.
 
 ## Technical Architecture
 
 ### Core Components
 
 **Game Engine (`Game.java`)**
-- Encapsulates all quiz logic and state management
-- Implements the Strategy pattern through dynamic question generation
-- Provides clean separation between game mechanics and presentation
-- Demonstrates proper use of access modifiers (public API vs private implementation)
+- Manages quiz logic and state
+- Dynamic question generation across multiple operation types
+- Validation logic for user answers with tolerance for floating-point operations
+- Private methods for question generation maintain implementation flexibility
 
 **Player Model (`Player.java`)**
-- Pure data model following the JavaBean convention
-- Encapsulates player state with controlled access through getters
-- Demonstrates proper constructor design and initialization patterns
+- Data model for player state and scoring
+- Tracks individual performance across game sessions
+- Simple interface for data access and updates
 
 **Presentation Layer (`KidsGameGUI.java`)**
-- Implements the MVC pattern with clear separation of concerns
-- Leverages composition over inheritance for UI components
-- Demonstrates event-driven programming and observer patterns
-- Features responsive design with CardLayout for state management
+- Swing-based user interface with CardLayout state management
+- Event-driven architecture using ActionListener patterns
+- Component composition for modular UI construction
+- Custom rendering for background graphics and themed styling
 
-## Object-Oriented Principles Demonstrated
+## Object-Oriented Principles
 
 ### Encapsulation
-- Private fields with public interfaces
-- Information hiding through controlled access
-- Immutable design where appropriate
+- State management within appropriate class boundaries
+- Interface methods provide controlled access to game state
+- Question generation logic hidden from external callers
 
 ### Abstraction
-- Clean separation between interface and implementation
-- Game logic abstracted from presentation concerns
-- Question generation algorithms hidden behind simple public methods
+- Game logic separated from presentation concerns
+- Question types implemented through distinct private methods
+- UI components abstract away Swing implementation details
 
 ### Modularity
-- Single Responsibility Principle throughout
-- Each class has a clearly defined purpose
-- Easy to test, extend, and maintain
+- Clear separation of responsibilities across classes
+- Game state independent of player tracking
+- Each component maintains focused purpose
 
 ### Polymorphism
-- Event handling through ActionListener interfaces
-- Dynamic method dispatch in question generation
-- Flexible design supporting multiple game modes
+- Interface-based event handling
+- Dynamic behavior through method selection in question generation
+- Extensible design supports additional game modes
 
 ## Features
 
@@ -72,7 +72,7 @@ This project exemplifies core OOP concepts through a well-structured application
 
 **Framework**: Java Swing
 
-Swing was selected as the GUI framework due to its comprehensive component library, mature event handling system, and straightforward integration with core Java. Its robust architecture provides an excellent foundation for demonstrating OOP principles without the overhead of external dependencies or complex build configurations.
+Swing was selected for its comprehensive component library, mature event model, and straightforward integration with core Java. The framework provides a solid foundation for GUI development without external dependencies.
 
 ## Getting Started
 
@@ -107,17 +107,16 @@ java KidsGameGUI
 
 ## Design Patterns
 
-- **Strategy Pattern**: Question generation methods
-- **MVC Pattern**: Clear separation of model, view, and controller
+- **Strategy Pattern**: Question generation through private method selection
 - **Observer Pattern**: Event listeners for user interactions
-- **Singleton Behavior**: Game state management
-- **Factory Method**: Dynamic question creation
+- **Composition**: UI built from assembled components rather than inheritance hierarchies
+- **State Management**: CardLayout for managing application flow
 
 ## Educational Value
 
-This codebase serves as an excellent reference for:
-- Clean code organization in Java
-- Practical application of OOP principles
+The codebase serves as a reference for:
+- Code organization in Java
+- Application of OOP principles
 - Event-driven programming patterns
 - GUI development with Swing
 - State management in interactive applications
@@ -137,4 +136,4 @@ This project is available for educational and reference purposes.
 
 ---
 
-*A demonstration of elegant software design through practical application.*
+*A demonstration of software design through practical application.*
