@@ -45,9 +45,8 @@ The project demonstrates separation of concerns across business logic, data mode
 - Each component maintains focused purpose
 
 ### Polymorphism
-- Interface-based event handling
-- Dynamic behavior through method selection in question generation
-- Extensible design supports additional game modes
+- Interface-based event handling through ActionListener
+- Flexible design supports additional game modes
 
 ## Features
 
@@ -107,8 +106,8 @@ java KidsGameGUI
 
 ## Design Patterns
 
-- **Strategy Pattern**: Question generation through private method selection
-- **Observer Pattern**: Event listeners for user interactions
+- **Conditional Logic**: Question generation through switch-based method selection
+- **Event-Driven Architecture**: ActionListener patterns for user interactions
 - **Composition**: UI built from assembled components rather than inheritance hierarchies
 - **State Management**: CardLayout for managing application flow
 
